@@ -6,8 +6,6 @@
 
 main{
     background-color: #31353F;
-    width: 100vw;
-    height: 100vh;
 }
 
                     /* Header */
@@ -54,8 +52,8 @@ main{
 .main{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .meme-big-box{
@@ -78,3 +76,14 @@ main{
     height: 67%;
 }
 
+                        /* aside */
+
+.aside{
+    width: 17%;
+    height: 100vh;
+    background-color: #262A35;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}

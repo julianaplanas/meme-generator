@@ -30,51 +30,50 @@
 </head>
 <body>
     <main>
-        <!-- Header -->
-        <section class="header">
-            <h1 class="header-title">Generador de Memes</h1>
-            <article class="header-button-box">
-                <button class="button-image button-header">
-                    <i class="fas fa-file-image"></i>
-                    <span>Imagen</span>
+        <section class="background">
+            <!-- Header -->
+            <section class="header">
+                <h1 class="header-title">Generador de Memes</h1>
+                <article class="header-button-box">
+                    <button class="button-image button-header">
+                        <i class="fas fa-file-image"></i>
+                        <span>Imagen</span>
+                    </button>
+                    <button class="button-text button-header">
+                        <i class="fas fa-font"></i>
+                        <span>Texto</span>
+                    </button>
+                    <button class="button-night button-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Modo oscuro</span>
+                    </button>
+                </article>
+            </section>
+            <!-- End of header -->
+
+            <article class="main">
+                <!-- Meme -->
+                <div class="meme-big-box">
+                    <div class="meme-top-text meme-text">TOP TEXT</div>
+                    <div class="meme-box"></div>
+                    <div class="meme-bottom-text meme-text">BOTTOM TEXT</div>
+                </div>
+                <!-- End of meme -->
+
+                <!-- Button for download -->
+                <button class=download-button>
+                    <i class="fas fa-download"></i>
+                    <span>Descargar meme</span>
                 </button>
-                <button class="button-text button-header">
-                    <i class="fas fa-font"></i>
-                    <span>Texto</span>
-                </button>
-                <button class="button-night button-header">
-                    <i class="fas fa-lightbulb"></i>
-                    <span>Modo oscuro</span>
-                </button>
+                <!-- End of button for download -->
             </article>
         </section>
-        <!-- End of header -->
-
         
-        <section class="main">
-            <!-- Meme -->
-            <article class="meme-big-box">
-                <div class="meme-top-text meme-text">TOP TEXT</div>
-                <div class="meme-box"></div>
-                <div class="meme-bottom-text meme-text">BOTTOM TEXT</div>
-            </article>
-            <!-- End of meme -->
-
-            <!-- Button for download -->
-            <button class=download-button>
-                <i class="fas fa-download"></i>
-                <span>Descargar meme</span>
-            </button>
-            <!-- End of button for download -->
-        </section>
-        
-
         <!-- Aside image -->
-        <!-- <section>
+        <aside class="aside aside-image">
             <button>X</button>
-            <h2>IMAGEN</h2>
-            
-        </section> -->
+            <h2>IMAGEN</h2>    
+        </aside>
         <!-- End of image -->
 
         <!-- Aside text -->
@@ -83,6 +82,7 @@
             <h2>TEXTO</h2>
         </section> -->
         <!-- End of text -->
+        
     </main>
     <script src="js/app.js"></script>
 </body>
