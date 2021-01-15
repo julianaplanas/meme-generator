@@ -10,7 +10,7 @@ main{
     height: 100vh;
 }
 
-/* Header */
+                    /* Header */
 
 .header{
     background-color: #191F2B;
@@ -48,3 +48,33 @@ main{
 .button-header:hover{
     background-color: #4E5665;
 }
+
+                    /* Meme  */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meme-big-box{
+    width: 600px;
+    height: 80vh;
+}
+
+.meme-text{
+    background-color: #AAA7A7;
+    color: #691B1B;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.meme-box{
+    background-color: #000000;
+    height: 67%;
+}
+
