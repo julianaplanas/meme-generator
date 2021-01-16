@@ -76,10 +76,24 @@ main{
     height: 67%;
 }
 
+                        /* Download button */
+
+.download-button{
+    background-color: #27A327;
+    color: #ffff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.download-button:hover{
+    opacity: 0.6;    
+}
+
                         /* aside */
 
 .aside{
-    width: 17%;
+    width: 30%;
     height: 100vh;
     background-color: #262A35;
     position: fixed;
