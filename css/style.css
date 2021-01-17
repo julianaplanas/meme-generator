@@ -101,4 +101,27 @@ main{
     top: 0;
     right: 0;
     color: #ffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.close-aside{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #262A35;
+    color: #ffff;
+    border: none;
+    padding: 10px;
+}
+
+.title-aside{
+    text-align: center;
+    margin-top: 6%;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
 }
