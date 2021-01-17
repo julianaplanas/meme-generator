@@ -7,7 +7,7 @@
 main{
     background-color: #31353F;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 
 
@@ -95,9 +95,9 @@ main{
 
                         /* aside */
 
-/* .aside{
-    width: 30%;
-    height: 100vh;
+.aside{
+    width: 100vw;
+    height: auto;
     background-color: #262A35;
     position: fixed;
     z-index: 1;
@@ -105,9 +105,10 @@ main{
     right: 0;
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
-} */
+    padding: 3%;
+}
 
-/* .close-aside{
+.close-aside{
     position: fixed;
     z-index: 1;
     top: 0;
@@ -115,16 +116,68 @@ main{
     background-color: #262A35;
     color: #ffff;
     border: none;
-    padding: 10px;
-} */
+    padding: 5%;
+    font-weight: 700;
+}
 
-/* .title-aside{
+.title-aside{
     text-align: center;
-    margin-top: 6%;
-} */
+    margin-top: 10%;
+    font-size: 20px;
+}
 
-/* .form-box{
+.form-box{
     display: flex;
     flex-direction: column;
-    padding: 5%;
-} */
+    padding: 2%;
+    font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.check-box{
+    display: flex;
+    padding: 2%;
+    font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.form-box label{
+    padding-bottom: 5px;
+}
+
+.form-box input, .form-box select{
+    background-color: #4E5665;
+    color: #ffff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.check-box label{
+    padding-left: 5px;
+}
+
+.check-box input{
+    margin-top: 2px;
+}
+
+.options-box{
+    width: 100%;
+}
+
+.options-box input, .options-box button{
+    background-color: #4E5665;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    width: 100%;
+    color: #ffff;
+}
+
+.color-button{
+    background-color: #4E5665;
+    padding: 5px;
+}
