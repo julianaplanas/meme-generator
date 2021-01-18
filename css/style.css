@@ -7,7 +7,7 @@
 main{
     background-color: #31353F;
     width: 100vw;
-    height: auto;
+    height: 120vh;
 }
 
 
@@ -62,6 +62,8 @@ main{
     width: 90%;
     height: 60vh;
     margin-top: 15%;
+    margin-bottom: 2%;
+    background-color: #000000;
 }
 
 .meme-text{
@@ -76,7 +78,7 @@ main{
 
 .meme-box{
     background-color: #000000;
-    height: 60%;
+    height: 75%;
 }
 
                         /* Download button */
@@ -97,9 +99,9 @@ main{
 
 .aside{
     width: 100vw;
-    height: auto;
+    height: 120vh;
     background-color: #262A35;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
