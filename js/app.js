@@ -15,6 +15,9 @@ const rightAlign = document.getElementById('rightAlign');
 const textColor = document.getElementById('textColor');
 const backColor = document.getElementById('backColor');
 const transparent = document.getElementById('transparent');
+const outlineNone = document.getElementById('outlineNone');
+const outlineWhite = document.getElementById('outlineWhite');
+const outlineBlack = document.getElementById('outlineBlack');
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value;
@@ -86,4 +89,22 @@ transparent.addEventListener('click', () =>{
         memeTopText.style.backgroundColor = `${backColor.value}`;
         memeBottomText.style.backgroundColor = `${backColor.value}`;
     }
+})
+
+outlineNone.addEventListener('click', (e) =>{
+    e.preventDefault();
+    outlineNone.checked = memeTopText.style.textShadow = "none";
+    outlineNone.checked = memeBottomText.style.textShadow = "none";
+})
+
+outlineWhite.addEventListener('click', (e) =>{
+    e.preventDefault();
+    outlineWhite.checked = memeTopText.style.textShadow = "2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff";
+    outlineWhite.checked = memeBottomText.style.textShadow = "2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff";
+})
+
+outlineBlack.addEventListener('click', (e) =>{
+    e.preventDefault();
+    outlineBlack.checked = memeTopText.style.textShadow = "2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000";
+    outlineBlack.checked = memeBottomText.style.textShadow = "2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000";
 })
