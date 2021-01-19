@@ -18,6 +18,8 @@ const transparent = document.getElementById('transparent');
 const outlineNone = document.getElementById('outlineNone');
 const outlineWhite = document.getElementById('outlineWhite');
 const outlineBlack = document.getElementById('outlineBlack');
+const spacing = document.getElementById('spacing');
+const lineSpacing = document.getElementById('lineSpacing');
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value;
@@ -107,4 +109,14 @@ outlineBlack.addEventListener('click', (e) =>{
     e.preventDefault();
     outlineBlack.checked = memeTopText.style.textShadow = "2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000";
     outlineBlack.checked = memeBottomText.style.textShadow = "2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000";
+})
+
+spacing.addEventListener('keyup', () => {
+    memeTopText.style.padding = `${spacing.value}px`;
+    memeBottomText.style.padding = `${spacing.value}px`;
+})
+
+lineSpacing.addEventListener('change', () =>{
+    memeTopText.style.lineHeight = `${lineSpacing.value}`;
+    memeBottomText.style.lineHeight = `${lineSpacing.value}`;
 })

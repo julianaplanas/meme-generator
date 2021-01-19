@@ -149,7 +149,7 @@ main{
     padding-bottom: 5px;
 }
 
-.form-box input, .form-box select{
+.form-box input, .form-box select, textarea{
     background-color: #4E5665;
     color: #ffff;
     padding: 8px;
