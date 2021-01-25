@@ -20,6 +20,8 @@ const outlineWhite = document.getElementById('outlineWhite');
 const outlineBlack = document.getElementById('outlineBlack');
 const spacing = document.getElementById('spacing');
 const lineSpacing = document.getElementById('lineSpacing');
+const url = document.getElementById('url');
+const memeBox = document.getElementById('memeBox');
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value;
@@ -119,4 +121,12 @@ spacing.addEventListener('keyup', () => {
 lineSpacing.addEventListener('change', () =>{
     memeTopText.style.lineHeight = `${lineSpacing.value}`;
     memeBottomText.style.lineHeight = `${lineSpacing.value}`;
+})
+
+url.addEventListener('keyup', (e) =>{
+    const urlImg = url.value;
+    memeBox.style.backgroundImage = `url('${urlImg}')`;
+    memeBox.style.backgroundPosition = 'center';
+    memeBox.style.backgroundRepeat = "no-repeat";
+    memeBox.style.backgroundSize = 'contain';
 })
