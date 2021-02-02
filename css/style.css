@@ -99,6 +99,7 @@ main{
     border: none;
     border-radius: 3px;
     padding: 10px;
+    margin-top: 7%;
 }
 
 .download-button:hover{
@@ -156,6 +157,7 @@ main{
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
     padding: 3%;
+    display: none;
 }
 
 .close-aside{
@@ -168,6 +170,12 @@ main{
     border: none;
     padding: 5%;
     font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+
+.close{
+    display: none;
 }
 
 .title-aside{

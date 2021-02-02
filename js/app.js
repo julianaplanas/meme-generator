@@ -22,6 +22,13 @@ const spacing = document.getElementById('spacing');
 const lineSpacing = document.getElementById('lineSpacing');
 const url = document.getElementById('url');
 const memeBox = document.getElementById('memeBox');
+const download = document.getElementById('download');
+const closeText = document.getElementById('closeText');
+const asideText = document.getElementById('asideText');
+const textButton = document.getElementById('textButton');
+const closeImage = document.getElementById('closeImage');
+const asideImage = document.getElementById('asideImage');
+const imageButton = document.getElementById('imageButton');
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value;
@@ -124,10 +131,26 @@ lineSpacing.addEventListener('change', () =>{
     memeBottomText.style.lineHeight = `${lineSpacing.value}`;
 })
 
-url.addEventListener('keyup', (e) =>{
-    const urlImg = url.value;
-    memeBox.style.backgroundImage = `url('${urlImg}')`;
-    memeBox.style.backgroundPosition = 'center';
-    memeBox.style.backgroundRepeat = "no-repeat";
-    memeBox.style.backgroundSize = 'contain';
+closeText.addEventListener('click', () =>{
+    asideText.style.display = 'none';
 })
+
+textButton.addEventListener('click', () =>{
+    asideText.style.display = 'block';
+})
+
+closeImage.addEventListener('click', () =>{
+    asideImage.style.display = 'none';
+})
+
+imageButton.addEventListener('click', () =>{
+    asideImage.style.display = 'block';
+})
+
+// url.addEventListener('keyup', (e) =>{
+//     const urlImg = url.value;
+//     memeBox.style.backgroundImage = `url('${urlImg}')`;
+//     memeBox.style.backgroundPosition = 'center';
+//     memeBox.style.backgroundRepeat = "no-repeat";
+//     memeBox.style.backgroundSize = 'contain';
+// })

@@ -35,11 +35,11 @@
             <section class="header">
                 <h1 class="header-title">Generador de Memes</h1>
                 <article class="header-button-box">
-                    <button class="button-image button-header">
+                    <button id="imageButton"  class="button-image button-header">
                         <i class="fas fa-file-image"></i>
                         <span>Imagen</span>
                     </button>
-                    <button class="button-text button-header">
+                    <button id="textButton" class="button-text button-header">
                         <i class="fas fa-font"></i>
                         <span>Texto</span>
                     </button>
@@ -61,7 +61,7 @@
                 <!-- End of meme -->
 
                 <!-- Button for download -->
-                <button class="download-button">
+                <button id="download" class="download-button">
                     <i class="fas fa-download"></i>
                     <span>Descargar meme</span>
                 </button>
@@ -70,8 +70,8 @@
         </section>
         
         <!-- Aside text -->
-        <aside class="aside aside-text">
-            <button class="close-aside">X</button>
+        <aside id="asideText" class="aside aside-text">
+            <button class="close-aside" id="closeText">X</button>
             <h2 class="title-aside">TEXTO</h2>    
             <form>
                 <div class="form-box">
@@ -165,8 +165,8 @@
         <!-- End of text -->
 
         <!-- Aside image -->
-        <!-- <aside class="aside aside-image">
-            <button class="close-aside">X</button>
+        <aside id="asideImage" class="aside aside-image">
+            <button id="closeImage" class="close-aside">X</button>
             <h2 class="title-aside">IMAGEN</h2>    
             <form>
                 <div class="form-box">
@@ -191,91 +191,6 @@
                             <option value="Multiplicar">Multiplicar</option>
                         </select>
                     </div>
-                </div>
-
-
-
-                <div class="check-box">
-                    <input type="checkbox" id="topCheck">
-                    <label for="topCheck">Sin texto superior</label>
-                </div>
-                <div class="form-box">
-                    <label for="bottomText">INFERIOR</label>
-                    <textarea name="bottomText" id="bottomText" class="textarea">BOTTOM TEXT</textarea>
-                </div>
-                <div class="check-box">
-                    <input type="checkbox" id="bottomCheck">
-                    <label for="bottomCheck">Sin texto inferior</label>
-                </div>
-                <div class="form-box">
-                    <label for="font">FUENTE</label>
-                    <select name="font" id="font">
-                        <option value="Arial">Arial</option>
-                        <option value="Arial Black">Arial Black</option>
-                        <option value="American Typewriter">American Typewriter</option>
-                        <option value="Andale Mono">Andale Mono</option>
-                        <option value="Impact">Impact</option>
-                        <option value="Helvetica">Helvetica</option>
-                        <option value="Impact">Impact</option>
-                        <option value="Verdana">Verdana</option>
-                        <option  value="Times New Roman">Times New Roman</option>
-                    </select>
-                </div>
-                <div class="check-box options-box">
-                    <input type="number" id="fontSize" value="40" min="0" max="50">
-                    <button id="leftAlign">
-                        <i class="fas fa-align-left"></i>
-                    </button>
-                    <button id="centerAlign">
-                        <i class="fas fa-align-center"></i>
-                    </button>
-                    <button id="rightAlign">
-                        <i class="fas fa-align-right"></i>
-                    </button>
-                </div>
-                <div class="check-box">
-                    <div class="form-box">
-                        <label for="color">COLOR</label>
-                        <div class="color-button">
-                            <input type="color" id="textColor" value="#000000">
-                            <span>#000000</span>
-                        </div>
-                    </div>
-                    <div class="form-box">
-                        <label for="back-color">FONDO</label>
-                        <div class="color-button">
-                            <input type="color" id="backColor" value="#ffffff">
-                            <span>#ffffff</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="check-box">
-                    <input type="checkbox" id="transparent">
-                    <label for="transparent">Fondo transparente</label>
-                </div>
-                <div class="form-box options-box">
-                    <label>CONTORNO</label>
-                    <div class="check-box">
-                        <button id="outlineNone">Ninguno</button>
-                        <button id="outlineWhite">Claro</button>
-                        <button id="outlineBlack">Oscuro</button>
-                    </div>
-                </div>
-                
-                <div class="form-box">
-                    <label for="spacing">ESPACIADO</label>
-                    <input type="number" id="spacing" value="17">
-                </div>
-                <div class="form-box">
-                    <label for="lineSpacing">INTERLINEADO</label>
-                    <select name="lineSpacing" id="lineSpacing" value="1.2">
-                        <option value="0.8">0.8</option>
-                        <option value="1">1</option>
-                        <option value="1.2">1.2</option>
-                        <option value="1.5">1.5</option>
-                        <option value="2">2</option>
-                        <option value="2.5">2.5</option>
-                    </select>
                 </div>
             </form>
         </aside> -->
