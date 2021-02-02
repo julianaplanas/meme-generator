@@ -60,9 +60,9 @@ main{
 
 .meme-big-box{
     width: 90%;
-    height: 60vh;
+    height: 52vh;
     margin-top: 15%;
-    margin-bottom: 2%;
+    margin-bottom: 8%;
     background-color: #000000;
 }
 
@@ -72,13 +72,14 @@ main{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
-    font-size: 26px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 7px;
+    height: 11%;
 }
 
 .meme-box{
     background-color: #000000;
-    height: 75%;
+    height: 78%;
 }
 
                         /* Download button */
@@ -88,12 +89,54 @@ main{
     color: #ffff;
     border: none;
     border-radius: 3px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .download-button:hover{
     opacity: 0.6;    
 }
+
+@media(min-width: 550px){
+    .meme-big-box{
+        width: 85%;
+        margin-top: 9%;
+        margin-bottom: 7%;
+    }
+
+    .meme-text{
+        padding: 9px;
+    }
+}
+
+@media(min-width: 768px){
+    .meme-big-box{
+        width: 75%;
+        margin-top: 5%;
+    }
+
+    .meme-text{
+        font-size: 24px;
+        padding: 10px;
+        height: 13%;
+    }
+}
+
+@media(min-width: 992px){
+    .meme-big-box{
+        width: 65%;
+        margin-bottom: 5%;
+        height: 60vh;
+        margin-top: 3%;
+    }
+
+    .meme-text{
+        font-size: 26px;
+        padding: 12px;
+        height: 15%;
+    }
+}
+
+
 
                         /* aside */
 
@@ -108,6 +151,7 @@ main{
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
     padding: 3%;
+    display: none;
 }
 
 .close-aside{

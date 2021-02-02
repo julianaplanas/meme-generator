@@ -34,6 +34,7 @@ bottomText.addEventListener('keyup', () =>{
 topCheck.addEventListener('click', () =>{
     if(topCheck.checked){
         memeTopText.style.display = 'none'
+        memeBox.style.height = '55vh';
     } else{
         memeTopText.style.display = 'block'
     }
@@ -75,12 +76,12 @@ rightAlign.addEventListener('click', (e) =>{
     memeBottomText.style.textAlign = 'right';
 })
 
-textColor.addEventListener('change', () =>{
+textColor.addEventListener('input', () =>{
     memeTopText.style.color = `${textColor.value}`;
     memeBottomText.style.color = `${textColor.value}`;
 })
 
-backColor.addEventListener('change', () =>{
+backColor.addEventListener('input', () =>{
     memeTopText.style.backgroundColor = `${backColor.value}`;
     memeBottomText.style.backgroundColor = `${backColor.value}`;
 })
