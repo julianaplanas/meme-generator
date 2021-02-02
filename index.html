@@ -79,7 +79,7 @@
                     <textarea name="topText" id="topText" class="textarea">TOP TEXT</textarea>
                 </div>
                 <div class="check-box">
-                    <input type="checkbox" id="topCheck">
+                    <input class="check" type="checkbox" id="topCheck">
                     <label for="topCheck">Sin texto superior</label>
                 </div>
                 <div class="form-box">
@@ -87,7 +87,7 @@
                     <textarea name="bottomText" id="bottomText" class="textarea">BOTTOM TEXT</textarea>
                 </div>
                 <div class="check-box">
-                    <input type="checkbox" id="bottomCheck">
+                    <input class="check" type="checkbox" id="bottomCheck">
                     <label for="bottomCheck">Sin texto inferior</label>
                 </div>
                 <div class="form-box">
@@ -105,43 +105,43 @@
                     </select>
                 </div>
                 <div class="check-box options-box">
-                    <input type="number" id="fontSize" value="40" min="0" max="50">
-                    <button id="leftAlign">
+                    <input class="padding size" type="number" id="fontSize" value="40" min="0" max="50">
+                    <button class="padding" id="leftAlign">
                         <i class="fas fa-align-left"></i>
                     </button>
-                    <button id="centerAlign">
+                    <button class="padding" id="centerAlign">
                         <i class="fas fa-align-center"></i>
                     </button>
-                    <button id="rightAlign">
+                    <button class="padding" id="rightAlign">
                         <i class="fas fa-align-right"></i>
                     </button>
                 </div>
                 <div class="check-box">
-                    <div class="form-box">
+                    <div class="form-box color-box">
                         <label for="color">COLOR</label>
-                        <div class="color-button">
+                        <div class="color-button padding">
                             <input type="color" id="textColor" value="#000000">
                             <span>#000000</span>
                         </div>
                     </div>
-                    <div class="form-box">
+                    <div class="form-box color-box">
                         <label for="back-color">FONDO</label>
-                        <div class="color-button">
+                        <div class="color-button padding">
                             <input type="color" id="backColor" value="#ffffff">
                             <span>#ffffff</span>
                         </div>
                     </div>
                 </div>
                 <div class="check-box">
-                    <input type="checkbox" id="transparent">
+                    <input class="check" type="checkbox" id="transparent">
                     <label for="transparent">Fondo transparente</label>
                 </div>
                 <div class="form-box options-box">
                     <label>CONTORNO</label>
                     <div class="check-box">
-                        <button id="outlineNone">Ninguno</button>
-                        <button id="outlineWhite">Claro</button>
-                        <button id="outlineBlack">Oscuro</button>
+                        <button class="padding" id="outlineNone">Ninguno</button>
+                        <button class="padding" id="outlineWhite">Claro</button>
+                        <button class="padding" id="outlineBlack">Oscuro</button>
                     </div>
                 </div>
                 
@@ -165,7 +165,7 @@
         <!-- End of text -->
 
         <!-- Aside image -->
-        <aside class="aside aside-image">
+        <!-- <aside class="aside aside-image">
             <button class="close-aside">X</button>
             <h2 class="title-aside">IMAGEN</h2>    
             <form>
@@ -278,7 +278,7 @@
                     </select>
                 </div>
             </form>
-        </aside>
+        </aside> -->
         <!-- End of image -->
         
     </main>
