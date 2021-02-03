@@ -206,6 +206,24 @@ label, .padding{
 .color-box{
     margin: 0 5px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.color-box input{
+    background-color: var(--grey);
+    color: var(--white);
+    border: none;
+}
+
+.color{
+    width: 30px;
+    height: 30px;
+    border-radius: 200px;
+    margin: 0 5px;
 }
 
 .check-box{
@@ -256,10 +274,6 @@ label, .padding{
 .color-button{
     background-color: var(--grey);
     border-radius: 5px;
-}
-
-.color-button input{
-    border-radius: 50px;
 }
 
 @media(min-width: 600px){

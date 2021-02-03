@@ -31,11 +31,11 @@ const asideImage = document.getElementById('asideImage');
 const imageButton = document.getElementById('imageButton');
 
 topText.addEventListener('keyup', () =>{
-    memeTopText.innerHTML = topText.value;
+    memeTopText.innerHTML = topText.value.replace(/\n/g, "<br>");
 })
 
 bottomText.addEventListener('keyup', () =>{
-    memeBottomText.innerHTML = bottomText.value;
+    memeBottomText.innerHTML = bottomText.value.replace(/\n/g, "<br>");
 })
 
 topCheck.addEventListener('click', () =>{
