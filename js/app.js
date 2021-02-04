@@ -147,6 +147,7 @@ closeText.addEventListener('click', () =>{
 
 textButton.addEventListener('click', () =>{
     asideText.style.display = 'block';
+    asideImage.style.display = 'none';
 })
 
 closeImage.addEventListener('click', () =>{
@@ -155,6 +156,7 @@ closeImage.addEventListener('click', () =>{
 
 imageButton.addEventListener('click', () =>{
     asideImage.style.display = 'block';
+    asideText.style.display = 'none';
 })
 
 url.addEventListener('keyup', (e) =>{

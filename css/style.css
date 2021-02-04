@@ -15,6 +15,10 @@ main{
     --white: #ffffff;
     --grey: #4E5665;
     --darkgrey: #262A35;
+    --generalTextSize: .8rem;
+    --generalWeight: 600;
+    --titlesTextSize: .9rem;
+    --titlesWeight: 700;
 }
 
 
@@ -203,7 +207,7 @@ label, .padding{
     width: 100%;
 }
 
-.color-box{
+/* .color-box{
     margin: 0 5px;
     border-radius: 5px;
     display: flex;
@@ -217,7 +221,7 @@ label, .padding{
     background-color: var(--grey);
     color: var(--white);
     border: none;
-}
+} */
 
 .color{
     width: 30px;
@@ -286,4 +290,78 @@ label, .padding{
     .aside{
         width: 30vw;
     }
+}
+
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+}
+
+.none{
+    display: flex;
+    align-items: flex-end;
+}
+
+label{
+    font-size: var(--titlesTextSize);
+    font-weight: var(--titlesWeight);
+}
+
+.color-box{
+    background-color: var(--grey);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: var(--generalTextSize);
+    font-weight: var(--generalWeight);
+}
+
+.color-display{
+    background-color: var(--grey);
+    border: none;
+    width: 30px;
+    font-size: 1rem;
+}
+
+.none select{
+    background-color: var(--grey);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--generalTextSize);
+    font-weight: var(--generalWeight);
+    padding: 11px 10px;
+}
+
+.margin-right{
+    margin-right: 12px;
+}
+
+.range{
+    background-color: var(--grey);
+    appearance: none;
+    border-radius: 10px;
+    height: 6px;
+    margin: 5px 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--white);
+}
+
+.restart-button{
+    padding: 8px;
+    margin-top: 20px;
+    border: none;
+    background-color: var(--grey);
+    color: var(--white);
 }
