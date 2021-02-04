@@ -29,6 +29,16 @@ const textButton = document.getElementById('textButton');
 const closeImage = document.getElementById('closeImage');
 const asideImage = document.getElementById('asideImage');
 const imageButton = document.getElementById('imageButton');
+const bright = document.getElementById('bright');
+const opacity = document.getElementById('opacity');
+const contrast = document.getElementById('contrast');
+const blurRange = document.getElementById('blurRange');
+const grayScale = document.getElementById('grayScale');
+const sepia = document.getElementById('sepia');
+const hue = document.getElementById('hue');
+const saturation = document.getElementById('saturation');
+const invert = document.getElementById('invert');
+const restart = document.getElementById('restart');
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value.replace(/\n/g, "<br>");
@@ -147,10 +157,64 @@ imageButton.addEventListener('click', () =>{
     asideImage.style.display = 'block';
 })
 
-// url.addEventListener('keyup', (e) =>{
-//     const urlImg = url.value;
-//     memeBox.style.backgroundImage = `url('${urlImg}')`;
-//     memeBox.style.backgroundPosition = 'center';
-//     memeBox.style.backgroundRepeat = "no-repeat";
-//     memeBox.style.backgroundSize = 'contain';
-// })
+url.addEventListener('keyup', (e) =>{
+    const urlImg = url.value;
+    memeBox.style.backgroundImage = `url('${urlImg}')`;
+    memeBox.style.backgroundPosition = 'center';
+    memeBox.style.backgroundRepeat = "no-repeat";
+    memeBox.style.backgroundSize = 'contain';
+})
+
+bright.addEventListener('change', () =>{
+    memeBox.style.filter = `brightness(${bright.value})`;
+})
+
+opacity.addEventListener('change', () =>{
+    memeBox.style.filter = `opacity(${opacity.value})`;
+})
+
+contrast.addEventListener('change', ()=>{
+    memeBox.style.filter = `contrast(${contrast.value}%)`;
+})
+
+blurRange.addEventListener('change', ()=>{
+    memeBox.style.filter = `blur(${blurRange.value}px)`;
+})
+
+grayScale.addEventListener('change', ()=>{
+    memeBox.style.filter = `grayscale(${grayScale.value}%)`;
+})
+
+sepia.addEventListener('change', ()=>{
+    memeBox.style.filter = `sepia(${sepia.value}%)`;
+})
+
+hue.addEventListener('change', ()=>{
+    memeBox.style.filter = `hue-rotate(${hue.value}deg)`;
+})
+
+saturation.addEventListener('change', ()=>{
+    memeBox.style.filter = `saturate(${saturation.value}%)`;
+})
+
+invert.addEventListener('change', ()=>{
+    memeBox.style.filter = `invert(${invert.value})`;
+})
+
+restart.addEventListener('click', (e) =>{
+    e.preventDefault();
+    bright.value = 1;
+    opacity.value = 1;
+    contrast.value = 100;
+    blurRange.value = 0;
+    grayScale.value = 0;
+    sepia.value = 0;
+    hue.value = 0;
+    saturation.value = 100;
+    invert.value = 0;
+    const urlImg = url.value;
+    memeBox.style.backgroundImage = `url('${urlImg}')`;
+    memeBox.style.backgroundPosition = 'center';
+    memeBox.style.backgroundRepeat = "no-repeat";
+    memeBox.style.backgroundSize = 'contain';
+})
