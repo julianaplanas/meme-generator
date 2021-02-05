@@ -211,6 +211,10 @@ textarea, select, input[type=number], .button{
     border-radius: 5px;
 }
 
+.spanColor{
+    font-size: var(--generalTextSize);
+}
+
 .margin-top{
     margin-top: 10px;
 }
@@ -242,11 +246,11 @@ textarea, select, input[type=number], .button{
     border-radius: 5px;
     font-size: var(--generalTextSize);
     font-weight: var(--generalWeight);
-    padding: 11px 10px;
+    padding: 11px 3px;
 }
 
 .margin-right{
-    margin-right: 12px;
+    margin-right: 5px;
 }
 
 .range{
@@ -277,12 +281,6 @@ input[type=range]::-webkit-slider-thumb {
 
 @media(min-width: 600px){
     .aside{
-        width: 40vw;
-    }
-}
-
-@media(min-width: 800px){
-    .aside{
-        width: 30vw;
+        width: 300px;
     }
 }
