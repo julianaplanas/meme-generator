@@ -40,6 +40,8 @@ const hue = document.getElementById('hue');
 const saturation = document.getElementById('saturation');
 const invert = document.getElementById('invert');
 const restart = document.getElementById('restart');
+const memeColor = document.getElementById('memeColor');
+const memeFilter = document.getElementById('memeFilter');
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value.replace(/\n/g, "<br>");
@@ -176,6 +178,14 @@ url.addEventListener('keyup', (e) =>{
     memeBox.style.backgroundSize = 'cover';
 })
 
+memeColor.addEventListener('input', () =>{
+    memeBox.style.backgroundColor = `${memeColor.value}`;
+})
+
+memeFilter.addEventListener('change', () =>{
+    memeBox.style.mixBlendMode = `${memeFilter.value}`;
+})
+
 const filters = () =>{
     memeBox.style.filter = `brightness(${bright.value}) opacity(${opacity.value}) contrast(${contrast.value}%) blur(${blurRange.value}px) grayscale(${grayScale.value}%) sepia(${sepia.value}%) hue-rotate(${hue.value}deg) saturate(${saturation.value}%) invert(${invert.value})`;
 }
@@ -229,3 +239,4 @@ restart.addEventListener('click', (e) =>{
     invert.value = 0;
     return filters();
 })
+
