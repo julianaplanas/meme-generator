@@ -42,6 +42,8 @@ const invert = document.getElementById('invert');
 const restart = document.getElementById('restart');
 const memeColor = document.getElementById('memeColor');
 const memeFilter = document.getElementById('memeFilter');
+const darkButton = document.getElementById('darkButton');
+const header = document.querySelector('.header');
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value.replace(/\n/g, "<br>");
@@ -240,3 +242,6 @@ restart.addEventListener('click', (e) =>{
     return filters();
 })
 
+darkButton.addEventListener('click', () =>{
+    header.classList.toggle('header-dark');
+})

@@ -15,6 +15,9 @@ main{
     --white: #ffffff;
     --grey: #4E5665;
     --darkgrey: #262A35;
+    --darkwhite: #E0E0E0;
+    --lightwhite: #FAFAFA;
+    --midwhite: #EEEEEE;
     --generalTextSize: .8rem;
     --generalWeight: 600;
     --titlesTextSize: .9rem;
@@ -66,7 +69,6 @@ main{
 .main{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     height: 100vh;
 }
@@ -74,7 +76,6 @@ main{
 .meme-big-box{
     margin-top: 20%;
     margin-bottom: 20%;
-    /* background-color: #000000; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -117,6 +118,10 @@ main{
                        /* Media for central page */
 
 @media(min-width: 500px){
+    main{
+        height: 140vh;
+    }
+
     .meme-big-box{
         margin-top: 15%;
         margin-bottom: 15%;
@@ -282,5 +287,11 @@ input[type=range]::-webkit-slider-thumb {
 @media(min-width: 600px){
     .aside{
         width: 300px;
+        height: 140vh;
     }
+}
+
+.header-dark{
+    background-color: var(--darkwhite);
+    color: var(--grey);
 }
