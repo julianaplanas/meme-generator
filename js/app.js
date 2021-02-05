@@ -167,40 +167,44 @@ url.addEventListener('keyup', (e) =>{
     memeBox.style.backgroundSize = 'contain';
 })
 
+const filters = () =>{
+    memeBox.style.filter = `brightness(${bright.value}) opacity(${opacity.value}) contrast(${contrast.value}%) blur(${blurRange.value}px) grayscale(${grayScale.value}%) sepia(${sepia.value}%) hue-rotate(${hue.value}deg) saturate(${saturation.value}%) invert(${invert.value})`;
+}
+
 bright.addEventListener('change', () =>{
-    memeBox.style.filter = `brightness(${bright.value})`;
+    return filters();
 })
 
 opacity.addEventListener('change', () =>{
-    memeBox.style.filter = `opacity(${opacity.value})`;
+    return filters();
 })
 
 contrast.addEventListener('change', ()=>{
-    memeBox.style.filter = `contrast(${contrast.value}%)`;
+    return filters();
 })
 
 blurRange.addEventListener('change', ()=>{
-    memeBox.style.filter = `blur(${blurRange.value}px)`;
+    return filters();
 })
 
 grayScale.addEventListener('change', ()=>{
-    memeBox.style.filter = `grayscale(${grayScale.value}%)`;
+    return filters();
 })
 
 sepia.addEventListener('change', ()=>{
-    memeBox.style.filter = `sepia(${sepia.value}%)`;
+    return filters();
 })
 
 hue.addEventListener('change', ()=>{
-    memeBox.style.filter = `hue-rotate(${hue.value}deg)`;
+    return filters();
 })
 
 saturation.addEventListener('change', ()=>{
-    memeBox.style.filter = `saturate(${saturation.value}%)`;
+    return filters();
 })
 
 invert.addEventListener('change', ()=>{
-    memeBox.style.filter = `invert(${invert.value})`;
+    return filters();
 })
 
 restart.addEventListener('click', (e) =>{

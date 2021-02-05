@@ -364,4 +364,5 @@ input[type=range]::-webkit-slider-thumb {
     border: none;
     background-color: var(--grey);
     color: var(--white);
+    border-radius: 5px;
 }
