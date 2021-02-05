@@ -74,23 +74,23 @@
             <button class="close-aside" id="closeText">X</button>
             <h2 class="title-aside">TEXTO</h2>    
             <form>
-                <div class="form-box">
+                <div class="column">
                     <label for="topText">SUPERIOR</label>
                     <textarea name="topText" id="topText" class="textarea">TOP TEXT</textarea>
                 </div>
-                <div class="check-box">
-                    <input class="check" type="checkbox" id="topCheck">
+                <div class="row">
+                    <input class="check"  type="checkbox" id="topCheck">
                     <label for="topCheck">Sin texto superior</label>
                 </div>
-                <div class="form-box">
+                <div class="column">
                     <label for="bottomText">INFERIOR</label>
                     <textarea name="bottomText" id="bottomText" class="textarea">BOTTOM TEXT</textarea>
                 </div>
-                <div class="check-box">
+                <div class="row">
                     <input class="check" type="checkbox" id="bottomCheck">
                     <label for="bottomCheck">Sin texto inferior</label>
                 </div>
-                <div class="form-box">
+                <div class="column">
                     <label for="font">FUENTE</label>
                     <select name="font" id="font">
                         <option value="Arial">Arial</option>
@@ -104,52 +104,51 @@
                         <option  value="Times New Roman">Times New Roman</option>
                     </select>
                 </div>
-                <div class="check-box options-box">
-                    <input class="padding size" type="number" id="fontSize" value="40" min="0" max="50">
-                    <button class="padding" id="leftAlign">
+                <div class="row margin-top">
+                    <input class="margin-right" type="number" id="fontSize" value="40" min="0" max="50">
+                    <button class="margin-right button" id="leftAlign">
                         <i class="fas fa-align-left"></i>
                     </button>
-                    <button class="padding" id="centerAlign">
+                    <button class="margin-right button" id="centerAlign">
                         <i class="fas fa-align-center"></i>
                     </button>
-                    <button class="padding" id="rightAlign">
+                    <button class="margin-right button" id="rightAlign">
                         <i class="fas fa-align-right"></i>
                     </button>
                 </div>
-                <div class="check-box">
-                    <div class="color-box">
-                        <label for="color">COLOR</label>
-                        <div class="color-button padding">
-                            <input class="color" type="color" id="textColor" value="#000000">
+                <div class="row">
+                    <div class="column">
+                        <label for="color-box">COLOR</label>
+                        <div class="color-box margin-right">
+                            <input class="color-display" type="color" id="textColor" value="#000000">
                             <span>#000000</span>
                         </div>
                     </div>
-                    <div class="color-box">
+                    <div class="column">
                         <label for="back-color">FONDO</label>
-                        <div class="color-button padding">
-                            <input class="color" type="color" id="backColor" value="#ffffff">
-                            <span>#ffffff</span>
+                        <div class="color-box">
+                            <input class="color-display" type="color" id="backColor" value="#ffffff">
+                            <span>#FFFFFF</span>
                         </div>
                     </div>
                 </div>
-                <div class="check-box">
+                <div class="row">
                     <input class="check" type="checkbox" id="transparent">
-                    <label for="transparent">Fondo transparente</label>
+                    <label  for="transparent">Fondo transparente</label>
                 </div>
-                <div class="form-box options-box">
+                <div class="column">
                     <label>CONTORNO</label>
-                    <div class="check-box">
-                        <button class="padding" id="outlineNone">Ninguno</button>
-                        <button class="padding" id="outlineWhite">Claro</button>
-                        <button class="padding" id="outlineBlack">Oscuro</button>
+                    <div class="row">
+                        <button class="margin-right button" id="outlineNone">Ninguno</button>
+                        <button class="margin-right button" id="outlineWhite">Claro</button>
+                        <button class="margin-right button" id="outlineBlack">Oscuro</button>
                     </div>
                 </div>
-                
-                <div class="form-box">
+                <div class="column">
                     <label for="spacing">ESPACIADO</label>
                     <input type="number" id="spacing" value="17">
                 </div>
-                <div class="form-box">
+                <div class="column">
                     <label for="lineSpacing">INTERLINEADO</label>
                     <select name="lineSpacing" id="lineSpacing" value="1.2">
                         <option value="0.8">0.8</option>

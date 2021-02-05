@@ -191,108 +191,6 @@ main{
     font-size: 1.5rem;
 }
 
-label{
-    font-weight: 600;
-}
-
-label, .padding{
-    padding: 10px 0;
-}
-
-.form-box{
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8rem;
-    font-weight: 500;
-    width: 100%;
-}
-
-/* .color-box{
-    margin: 0 5px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8rem;
-    font-weight: 500;
-    width: 100%;
-}
-
-.color-box input{
-    background-color: var(--grey);
-    color: var(--white);
-    border: none;
-} */
-
-.color{
-    width: 30px;
-    height: 30px;
-    border-radius: 200px;
-    margin: 0 5px;
-}
-
-.check-box{
-    display: flex;
-    font-size: 13px;
-    font-weight: 500;
-    width: 100%;
-}
-
-.check{
-    margin-top: 12px;
-    margin-right: 5px;
-}
-
-#font{
-    margin-bottom: 5px;
-}
-
-.form-box input, .form-box select, textarea{
-    background-color: var(--grey);
-    color: var(--white);
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-}
-
-.size{
-    text-align: center;
-}
-
-.options-box{
-    width: 100%;
-}
-
-.check-box button{
-    margin-top: 5px;
-    margin: 0 5px;
-}
-
-.options-box input, .options-box button{
-    background-color: var(--grey);
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    color: var(--white);
-}
-
-.color-button{
-    background-color: var(--grey);
-    border-radius: 5px;
-}
-
-@media(min-width: 600px){
-    .aside{
-        width: 40vw;
-    }
-}
-
-@media(min-width: 800px){
-    .aside{
-        width: 30vw;
-    }
-}
-
-
 .column{
     display: flex;
     flex-direction: column;
@@ -310,6 +208,24 @@ label, .padding{
 label{
     font-size: var(--titlesTextSize);
     font-weight: var(--titlesWeight);
+    margin: 10px 0;
+}
+
+textarea, select, input[type=number], .button{
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.margin-top{
+    margin-top: 10px;
+}
+
+.check{
+    margin-top: 12px;
+    margin-right: 5px;
 }
 
 .color-box{
@@ -365,4 +281,16 @@ input[type=range]::-webkit-slider-thumb {
     background-color: var(--grey);
     color: var(--white);
     border-radius: 5px;
+}
+
+@media(min-width: 600px){
+    .aside{
+        width: 40vw;
+    }
+}
+
+@media(min-width: 800px){
+    .aside{
+        width: 30vw;
+    }
 }
