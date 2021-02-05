@@ -3,6 +3,7 @@
 
 const memeTopText = document.getElementById('memeTopText');
 const memeBottomText = document.getElementById('memeBottomText')
+const bigBoxMeme = document.getElementById('bigBoxMeme');
 const topText = document.getElementById('topText');
 const bottomText = document.getElementById('bottomText');
 const topCheck = document.getElementById('topCheck');
@@ -50,18 +51,22 @@ bottomText.addEventListener('keyup', () =>{
 
 topCheck.addEventListener('click', () =>{
     if(topCheck.checked){
-        memeTopText.style.display = 'none'
+        memeTopText.style.display = 'none';
+        memeBox.style.backgroundSize = 'auto';
         memeBox.style.height = '55vh';
     } else{
         memeTopText.style.display = 'block'
+        memeBox.style.backgroundSize = 'cover';
     }
 })
 
 bottomCheck.addEventListener('click', () =>{
     if(bottomCheck.checked){
-        memeBottomText.style.display = 'none'
+        memeBottomText.style.display = 'none';
+        memeBox.style.backgroundSize = 'auto';
     } else{
-        memeBottomText.style.display = 'block'
+        memeBottomText.style.display = 'block';
+        memeBox.style.backgroundSize = 'cover';
     }
 })
 
@@ -107,9 +112,13 @@ transparent.addEventListener('click', () =>{
     if(transparent.checked){
         memeTopText.style.backgroundColor = 'transparent';
         memeBottomText.style.backgroundColor = 'transparent';
+        memeBox.style.backgroundSize = 'auto';
+        bigBoxMeme.style.backgroundColor = 'transparent';
     } else{
         memeTopText.style.backgroundColor = `${backColor.value}`;
         memeBottomText.style.backgroundColor = `${backColor.value}`;
+        memeBox.style.backgroundSize = 'cover';
+        bigBoxMeme.style.backgroundColor = 'black';
     }
 })
 
@@ -164,7 +173,7 @@ url.addEventListener('keyup', (e) =>{
     memeBox.style.backgroundImage = `url('${urlImg}')`;
     memeBox.style.backgroundPosition = 'center';
     memeBox.style.backgroundRepeat = "no-repeat";
-    memeBox.style.backgroundSize = 'contain';
+    memeBox.style.backgroundSize = 'cover';
 })
 
 const filters = () =>{
