@@ -218,9 +218,5 @@ restart.addEventListener('click', (e) =>{
     hue.value = 0;
     saturation.value = 100;
     invert.value = 0;
-    const urlImg = url.value;
-    memeBox.style.backgroundImage = `url('${urlImg}')`;
-    memeBox.style.backgroundPosition = 'center';
-    memeBox.style.backgroundRepeat = "no-repeat";
-    memeBox.style.backgroundSize = 'contain';
+    return filters();
 })
