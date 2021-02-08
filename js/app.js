@@ -42,8 +42,14 @@ const invert = document.getElementById('invert');
 const restart = document.getElementById('restart');
 const memeColor = document.getElementById('memeColor');
 const memeFilter = document.getElementById('memeFilter');
-const darkButton = document.getElementById('darkButton');
+const darkButton = document.getElementById('darkCheck');
 const header = document.querySelector('.header');
+const icons = document.querySelector('.fas');
+const body = document.getElementById('body');
+const range = document.getElementsByClassName('range');
+
+
+// textarea, select, input[type=number]
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value.replace(/\n/g, "<br>");
@@ -242,6 +248,25 @@ restart.addEventListener('click', (e) =>{
     return filters();
 })
 
-darkButton.addEventListener('click', () =>{
-    header.classList.toggle('header-dark');
+function lightMode(){
+    document.documentElement.style.setProperty('--backgroundHeader', '#E0E0E0');
+    document.documentElement.style.setProperty('--generalText', '#4E5665');
+    document.documentElement.style.setProperty('--background', '#EEEEEE');
+    document.documentElement.style.setProperty('--backgroundAside', '#FAFAFA');
+}
+
+function darkMode(){
+    document.documentElement.style.setProperty('--backgroundHeader', '#191F2B');
+    document.documentElement.style.setProperty('--generalText', '#ffffff');
+    document.documentElement.style.setProperty('--background', '#4E5665');
+    document.documentElement.style.setProperty('--backgroundAside', '#262A35');
+}
+
+darkButton.addEventListener('click',() => {    
+    if(darkButton.checked){
+        lightMode();
+    } 
+    else{
+        darkMode();
+    } 
 })

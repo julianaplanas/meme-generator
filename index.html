@@ -29,7 +29,7 @@
 
 </head>
 <body>
-    <main>
+    <main id="body">
         <section class="background">
             <!-- Header -->
             <section class="header">
@@ -43,10 +43,11 @@
                         <i class="fas fa-font"></i>
                         <span>Texto</span>
                     </button>
-                    <button id="darkButton" class="button-night button-header">
+                    <div class="button-night button-header">   
                         <i class="fas fa-lightbulb"></i>
-                        <span>Modo oscuro</span>
-                    </button>
+                        <label id="darkButton" for="darkCheck">Modo oscuro</label>
+                        <input type="checkbox" id="darkCheck">
+                    </div>
                 </article>
             </section>
             <!-- End of header -->

@@ -5,16 +5,16 @@
 }
 
 main{
-    background-color: #31353F;
+    background-color: var(--background);
     width: 100vw;
     height: 120vh;
 }
 
 :root{
-    --obscure: #191F2B;
-    --white: #ffffff;
-    --grey: #4E5665;
-    --darkgrey: #262A35;
+    --backgroundHeader: #191F2B;
+    --generalText: #ffffff;
+    --background: #4E5665;
+    --backgroundAside: #262A35;
     --darkwhite: #E0E0E0;
     --lightwhite: #FAFAFA;
     --midwhite: #EEEEEE;
@@ -28,8 +28,8 @@ main{
                     /* Header */
 
 .header{
-    background-color: var(--obscure);
-    color: var(--white);
+    background-color: var(--backgroundHeader);
+    color: var(--generalText);
 }
 
 .header-title{
@@ -42,26 +42,33 @@ main{
 
 .header-button-box{
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .button-header{
     border: none;
-    background-color: var(--obscure);
-    color: var(--white);
+    background-color: var(--backgroundHeader);
+    color: var(--generalText);
     padding: 12px 7px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.button-header span{
+.button-header span, .button-header label{
     font-size: 14px;
     padding: 2px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: var(--generalWeight);
 }
 
 .button-header:hover, .button-header:active{
-    background-color: var(--grey);
+    background-color: var(--background);
     outline: none;
+}
+
+.button-night input{
+    display: none;
 }
 
                     /* Meme  */
@@ -70,7 +77,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .meme-big-box{
@@ -82,7 +89,7 @@ main{
 }
 
 .meme-text{
-    background-color:var(--white);
+    background-color: #ffffff;
     color: #000000;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -104,7 +111,7 @@ main{
 
 .download-button{
     background-color: #27A327;
-    color: var(--white);
+    color: #ffffff;
     border: none;
     border-radius: 3px;
     padding: 10px;
@@ -153,12 +160,12 @@ main{
 .aside{
     width: 100vw;
     height: 120vh;
-    background-color: var(--darkgrey);
+    background-color: var(--backgroundAside);
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
-    color: #ffff;
+    color:var(--generalText);
     font-family: 'Open Sans', sans-serif;
     padding: 3%;
     display: none;
@@ -169,8 +176,8 @@ main{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: var(--darkgrey);
-    color: var(--white);
+    background-color: transparent;
+    color: var(--generalText);
     border: none;
     padding: 5%;
     font-weight: 700;
@@ -209,8 +216,8 @@ label{
 }
 
 textarea, select, input[type=number], .button{
-    background-color: var(--grey);
-    color: var(--white);
+    background-color: var(--background);
+    color: var(--generalText);
     padding: 8px;
     border: none;
     border-radius: 5px;
@@ -230,7 +237,7 @@ textarea, select, input[type=number], .button{
 }
 
 .color-box{
-    background-color: var(--grey);
+    background-color: var(--background);
     padding: 8px;
     border-radius: 5px;
     font-size: var(--generalTextSize);
@@ -238,15 +245,15 @@ textarea, select, input[type=number], .button{
 }
 
 .color-display{
-    background-color: var(--grey);
+    background-color: var(--background);
     border: none;
     width: 30px;
     font-size: 1rem;
 }
 
 .none select{
-    background-color: var(--grey);
-    color: var(--white);
+    background-color: var(--background);
+    color: var(--generalText);
     border: none;
     border-radius: 5px;
     font-size: var(--generalTextSize);
@@ -259,7 +266,7 @@ textarea, select, input[type=number], .button{
 }
 
 .range{
-    background-color: var(--grey);
+    background-color: var(--background);
     appearance: none;
     border-radius: 10px;
     height: 6px;
@@ -272,15 +279,15 @@ input[type=range]::-webkit-slider-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: var(--white);
+    background: var(--generalText);
 }
 
 .restart-button{
     padding: 8px;
     margin-top: 20px;
     border: none;
-    background-color: var(--grey);
-    color: var(--white);
+    background-color: var(--background);
+    color: var(--generalText);
     border-radius: 5px;
 }
 
@@ -291,7 +298,43 @@ input[type=range]::-webkit-slider-thumb {
     }
 }
 
-.header-dark{
+
+                /* Modo claro */
+
+/* .header-light{
     background-color: var(--darkwhite);
     color: var(--grey);
 }
+
+.button-header-light{
+    background-color: var(--darkwhite);
+    color: var(--grey);
+}
+
+.fas-light{
+    color: var(--grey);
+}
+
+.button-header-light:hover, .button-header-light:active{
+    background-color: #bdbdbd;
+    opacity: ;
+    outline: none;
+}
+
+.body-light{
+    background-color:var(--midwhite);
+}
+
+.aside-light, .close-aside-light{
+    background-color: var(--lightwhite);
+    color: var(--grey);
+}
+
+.light{
+    background-color: var(--darkwhite);
+    color: var(--grey);
+}
+
+.range-light::-webkit-slider-thumb {
+    background: var(--backgroundMain);
+} */
