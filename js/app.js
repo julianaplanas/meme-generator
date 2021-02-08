@@ -49,7 +49,9 @@ const body = document.getElementById('body');
 const range = document.getElementsByClassName('range');
 
 
-// textarea, select, input[type=number]
+
+
+                // TEXT FUNCTIONS  
 
 topText.addEventListener('keyup', () =>{
     memeTopText.innerHTML = topText.value.replace(/\n/g, "<br>");
@@ -124,6 +126,7 @@ transparent.addEventListener('click', () =>{
         memeBottomText.style.backgroundColor = 'transparent';
         memeBox.style.backgroundSize = 'auto';
         bigBoxMeme.style.backgroundColor = 'transparent';
+
     } else{
         memeTopText.style.backgroundColor = `${backColor.value}`;
         memeBottomText.style.backgroundColor = `${backColor.value}`;
@@ -160,6 +163,11 @@ lineSpacing.addEventListener('change', () =>{
     memeBottomText.style.lineHeight = `${lineSpacing.value}`;
 })
 
+
+
+
+                  // CLOSE AND OPEN ASIDES
+
 closeText.addEventListener('click', () =>{
     asideText.style.display = 'none';
 })
@@ -177,6 +185,11 @@ imageButton.addEventListener('click', () =>{
     asideImage.style.display = 'block';
     asideText.style.display = 'none';
 })
+
+
+
+
+                // IMAGE ASIDE
 
 url.addEventListener('keyup', (e) =>{
     const urlImg = url.value;
@@ -248,6 +261,11 @@ restart.addEventListener('click', (e) =>{
     return filters();
 })
 
+
+
+
+                    // DARK AND LIGHT MODE
+
 function lightMode(){
     document.documentElement.style.setProperty('--backgroundHeader', '#E0E0E0');
     document.documentElement.style.setProperty('--generalText', '#4E5665');
@@ -270,3 +288,20 @@ darkButton.addEventListener('click',() => {
         darkMode();
     } 
 })
+
+
+
+
+                   // DOWNLOAD 
+
+download.addEventListener('click', () =>{
+    downloadImage();
+})
+
+const downloadImage = () =>{
+    domtoimage.toBlob(bigBoxMeme)
+        .then(function (blob){
+            saveAs(blob, 'meme.png');
+        });
+}
+
