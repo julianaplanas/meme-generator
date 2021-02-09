@@ -62,7 +62,7 @@ main{
     font-weight: var(--generalWeight);
 }
 
-.button-header:hover, .button-header:active{
+.button-header:hover, .button-header:active, .button-header:focus{
     background-color: var(--background);
     outline: none;
 }
@@ -77,7 +77,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 100vh; */
 }
 
 .meme-big-box{
@@ -118,8 +117,9 @@ main{
     margin-top: 2%;
 }
 
-.download-button:hover{
+.download-button:hover, .download-button:focus{
     opacity: 0.6;    
+    outline: none;
 }
 
                        /* Media for central page */
@@ -183,6 +183,11 @@ main{
     font-weight: 700;
     outline: none;
     cursor: pointer;
+}
+
+.close-aside:focus, .close-aside:hover{
+    opacity: 0.6;
+    outline: none;
 }
 
 .close{
@@ -291,50 +296,15 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 5px;
 }
 
+.aside button:hover, .aside button:focus, form textarea:hover, form textarea:focus, form input:focus, form input:hover, form select:focus, form select:hover{
+    outline: none;
+    opacity: 0.6;
+}
+
+
 @media(min-width: 600px){
     .aside{
         width: 300px;
         height: 140vh;
     }
 }
-
-
-                /* Modo claro */
-
-/* .header-light{
-    background-color: var(--darkwhite);
-    color: var(--grey);
-}
-
-.button-header-light{
-    background-color: var(--darkwhite);
-    color: var(--grey);
-}
-
-.fas-light{
-    color: var(--grey);
-}
-
-.button-header-light:hover, .button-header-light:active{
-    background-color: #bdbdbd;
-    opacity: ;
-    outline: none;
-}
-
-.body-light{
-    background-color:var(--midwhite);
-}
-
-.aside-light, .close-aside-light{
-    background-color: var(--lightwhite);
-    color: var(--grey);
-}
-
-.light{
-    background-color: var(--darkwhite);
-    color: var(--grey);
-}
-
-.range-light::-webkit-slider-thumb {
-    background: var(--backgroundMain);
-} */

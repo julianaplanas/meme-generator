@@ -12,8 +12,8 @@
     <meta property="og:description" content="Editor de memes para web y mobile device.">
     <meta property="og:type" content="editor">
     <meta property="og:site name" content="editor de memes">
-    <!-- <meta property="og:url" content="">
-    <meta property="og:image" content=""> -->
+    <meta property="og:url" content="prinsepunk.github.io/editor-memes/">
+    <!-- <meta property="og:image" content=""> -->
 
     <title>Editor de memes</title>
 
@@ -22,6 +22,7 @@
 
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/aea12d7f3c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,16 +36,16 @@
             <section class="header">
                 <h1 class="header-title">Generador de Memes</h1>
                 <article class="header-button-box">
-                    <button id="imageButton"  class="button-image button-header">
-                        <i class="fas fa-file-image"></i>
+                    <button aria-label="Funciones para editar la imagen" id="imageButton"  class="button-image button-header">
+                        <i class="fas fa-file-image" aria-hidden="true"></i>
                         <span>Imagen</span>
                     </button>
-                    <button id="textButton" class="button-text button-header">
-                        <i class="fas fa-font"></i>
+                    <button id="textButton" class="button-text button-header" aria-label="Funciones para editar el texto">
+                        <i class="fas fa-font" aria-hidden="true"></i>
                         <span>Texto</span>
                     </button>
-                    <div class="button-night button-header">   
-                        <i class="fas fa-lightbulb"></i>
+                    <div role='button' class="button-night button-header" aria-label="Activar modo claro o modo oscuro">   
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
                         <label id="darkButton" for="darkCheck">Modo oscuro</label>
                         <input type="checkbox" id="darkCheck">
                     </div>
@@ -62,8 +63,8 @@
                 <!-- End of meme -->
 
                 <!-- Button for download -->
-                <button id="download" class="download-button">
-                    <i class="fas fa-download"></i>
+                <button id="download" class="download-button" aria-label="Función para descargar imagen">
+                    <i class="fas fa-download" aria-hidden="true"></i>
                     <span>Descargar meme</span>
                 </button>
                 <!-- End of button for download -->
@@ -72,7 +73,7 @@
         
         <!-- Aside text -->
         <aside id="asideText" class="aside aside-text">
-            <button class="close-aside" id="closeText">X</button>
+            <button class="close-aside" id="closeText" aria-label="Cerrar la edición del texto">X</button>
             <h2 class="title-aside">TEXTO</h2>    
             <form>
                 <div class="column">
@@ -165,7 +166,7 @@
         <!-- End of text -->
 
         <!-- Aside image -->
-        <aside id="asideImage" class="aside aside-image">
+        <aside id="asideImage" class="aside aside-image" aria-label="Cerrar la edición de la imagen">
             <button id="closeImage" class="close-aside">X</button>
             <h2 class="title-aside">IMAGEN</h2>    
             <form>

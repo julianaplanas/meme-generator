@@ -299,9 +299,8 @@ download.addEventListener('click', () =>{
 })
 
 const downloadImage = () =>{
-    domtoimage.toBlob(bigBoxMeme)
-        .then(function (blob){
-            saveAs(blob, 'meme.png');
-        });
+    domtoimage.toBlob(bigBoxMeme).then(function (blob) {
+        saveAs(blob, 'mi-meme.png');
+    });
 }
 
