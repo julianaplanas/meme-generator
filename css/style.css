@@ -32,12 +32,19 @@ main{
 }
 
 .header-title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px;
-}
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+                            8px 8px #ff1f8f,
+                            20px 20px #000000;
+    }
 
 .header-button-box{
     text-align: center;
@@ -298,8 +305,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .aside button:hover, .aside button:focus, form textarea:hover, form textarea:focus, form input:focus, form input:hover, form select:focus, form select:hover{
-    outline: none;
-    opacity: 0.6;
+    box-shadow: 0px 0px 12px 0px #ff1f8f;
 }
 
 
