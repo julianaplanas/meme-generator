@@ -17,6 +17,7 @@ main{
     --background: rgba(255, 255, 255, 0.6);
     --backgroundAside: #424242;
     --inputsText: #303030;
+    --title: #000000;
     --generalTextSize: .8rem;
     --generalWeight: 600;
     --titlesTextSize: .9rem;
@@ -28,7 +29,7 @@ main{
 
 .header{
     background-color: var(--backgroundHeader);
-    color: var(--generalText);
+    /* color: var(--generalText); */
 }
 
 .header-title{
@@ -40,10 +41,10 @@ main{
     letter-spacing:0.1em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color:var(--generalText);
     text-shadow: 
                             8px 8px #ff1f8f,
-                            20px 20px #000000;
+                            20px 20px var(--title);
     }
 
 .header-button-box{

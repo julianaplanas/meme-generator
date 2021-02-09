@@ -273,6 +273,7 @@ function lightMode(){
     document.documentElement.style.setProperty('--backgroundAside', '#FAFAFA');
     document.documentElement.style.setProperty('--backgroundMain', 'rgba(0, 0, 0, 0.08)');
     document.documentElement.style.setProperty('--inputsText', '#424242');
+    document.documentElement.style.setProperty('--title', 'transparent');
 }
 
 function darkMode(){
@@ -282,6 +283,7 @@ function darkMode(){
     document.documentElement.style.setProperty('--backgroundAside', '#424242');
     document.documentElement.style.setProperty('--backgroundMain', 'rgba(0, 0, 0, 0.38)');
     document.documentElement.style.setProperty('--inputsText', '#303030');
+    document.documentElement.style.setProperty('--title', '#000000');
 }
 
 darkButton.addEventListener('click',() => {    
