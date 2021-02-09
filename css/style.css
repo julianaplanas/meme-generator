@@ -5,19 +5,18 @@
 }
 
 main{
-    background-color: var(--background);
+    background-color: var(--backgroundMain);
     width: 100vw;
     height: 120vh;
 }
 
 :root{
-    --backgroundHeader: #191F2B;
+    --backgroundHeader: #303030;
     --generalText: #ffffff;
-    --background: #4E5665;
-    --backgroundAside: #262A35;
-    --darkwhite: #E0E0E0;
-    --lightwhite: #FAFAFA;
-    --midwhite: #EEEEEE;
+    --backgroundMain: rgba(0, 0, 0, 0.38);
+    --background: rgba(255, 255, 255, 0.6);
+    --backgroundAside: #424242;
+    --inputsText: #303030;
     --generalTextSize: .8rem;
     --generalWeight: 600;
     --titlesTextSize: .9rem;
@@ -33,7 +32,7 @@ main{
 }
 
 .header-title{
-    font-size: 27px;
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -65,6 +64,7 @@ main{
 .button-header:hover, .button-header:active, .button-header:focus{
     background-color: var(--background);
     outline: none;
+    color: var(--inputsText);
 }
 
 .button-night input{
@@ -109,7 +109,7 @@ main{
                         /* Download button */
 
 .download-button{
-    background-color: #27A327;
+    background-color: var(--backgroundHeader);
     color: #ffffff;
     border: none;
     border-radius: 3px;
@@ -222,7 +222,7 @@ label{
 
 textarea, select, input[type=number], .button{
     background-color: var(--background);
-    color: var(--generalText);
+    color: var(--inputsText);
     padding: 8px;
     border: none;
     border-radius: 5px;
@@ -243,6 +243,7 @@ textarea, select, input[type=number], .button{
 
 .color-box{
     background-color: var(--background);
+    color: var(--inputsText);
     padding: 8px;
     border-radius: 5px;
     font-size: var(--generalTextSize);
@@ -258,7 +259,7 @@ textarea, select, input[type=number], .button{
 
 .none select{
     background-color: var(--background);
-    color: var(--generalText);
+    color: var(--inputsText);
     border: none;
     border-radius: 5px;
     font-size: var(--generalTextSize);
@@ -292,7 +293,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: 20px;
     border: none;
     background-color: var(--background);
-    color: var(--generalText);
+    color: var(--inputsText);
     border-radius: 5px;
 }
 
