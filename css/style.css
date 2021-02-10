@@ -166,7 +166,7 @@ body{
 
 .aside{
     width: 100vw;
-    height: 120vh;
+    height: 130vh;
     background-color: var(--backgroundAside);
     position: absolute;
     z-index: 1;
