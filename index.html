@@ -108,14 +108,14 @@
                     </select>
                 </div>
                 <div class="row margin-top">
-                    <input class="margin-right" type="number" id="fontSize" value="40" min="0" max="50">
-                    <button class="margin-right button" id="leftAlign">
+                    <input class="margin-right" type="number" id="fontSize" value="40" min="0" max="50" aria-label="Font size selector">
+                    <button class="margin-right button" id="leftAlign" aria-label="Align the text at left">
                         <i class="fas fa-align-left"></i>
                     </button>
-                    <button class="margin-right button" id="centerAlign">
+                    <button class="margin-right button" id="centerAlign" aria-label="Align the text at center">
                         <i class="fas fa-align-center"></i>
                     </button>
-                    <button class="margin-right button" id="rightAlign">
+                    <button class="margin-right button" id="rightAlign" aria-label="Align the text at right">
                         <i class="fas fa-align-right"></i>
                     </button>
                 </div>
@@ -123,14 +123,14 @@
                     <div class="column">
                         <label for="color-box">COLOR</label>
                         <div class="color-box margin-right">
-                            <input class="color-display" type="color" id="textColor" value="#000000">
+                            <input class="color-display" type="color" id="textColor" value="#000000" aria-label="Text color selector">
                             <span>#000000</span>
                         </div>
                     </div>
                     <div class="column">
                         <label for="back-color">FONDO</label>
                         <div class="color-box">
-                            <input class="color-display" type="color" id="backColor" value="#ffffff">
+                            <input class="color-display" type="color" id="backColor" value="#ffffff" aria-label="Background of text color selector">
                             <span>#FFFFFF</span>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                         </div>
                     </div>
                     <div class="none">
-                        <select name="memeFilter" id="memeFilter">
+                        <select name="memeFilter" id="memeFilter" aria-label="Filtro par la imagen">
                             <option value="normal">Ninguno</option>
                             <option value="lighten">Aclarar</option>
                             <option value="darken">Oscurecer</option>
