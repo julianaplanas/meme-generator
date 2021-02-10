@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-main{
-    /* background-color: var(--backgroundMain); */
+body{
+    background-color: var(--backgroundMain);
     width: 100vw;
-    height: auto;
+    height: 150vh;
 }
 
 :root{
@@ -29,7 +29,6 @@ main{
 
 .header{
     background-color: var(--backgroundHeader);
-    /* color: var(--generalText); */
 }
 
 .header-title{
@@ -85,8 +84,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--backgroundMain);
-    height: 120vh;
 }
 
 .meme-big-box{

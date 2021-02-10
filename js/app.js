@@ -45,7 +45,7 @@ const memeFilter = document.getElementById('memeFilter');
 const darkButton = document.getElementById('darkCheck');
 // const header = document.querySelector('.header');
 // const icons = document.querySelector('.fas');
-const body = document.getElementById('body');
+// const body = document.getElementById('body');
 // const range = document.getElementsByClassName('range');
 
 
