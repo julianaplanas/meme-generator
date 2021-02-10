@@ -5,9 +5,9 @@
 }
 
 main{
-    background-color: var(--backgroundMain);
+    /* background-color: var(--backgroundMain); */
     width: 100vw;
-    height: 120vh;
+    height: auto;
 }
 
 :root{
@@ -44,7 +44,7 @@ main{
     -webkit-text-stroke-color:var(--generalText);
     text-shadow: 
                             8px 8px #ff1f8f,
-                            20px 20px var(--title);
+                            20px 20px transparent;
     }
 
 .header-button-box{
@@ -85,6 +85,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--backgroundMain);
+    height: 120vh;
 }
 
 .meme-big-box{
@@ -93,6 +95,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 .meme-text{
@@ -118,11 +121,11 @@ main{
 
 .download-button{
     background-color: var(--backgroundHeader);
-    color: #ffffff;
+    color:var(--generalText);
     border: none;
     border-radius: 3px;
     padding: 10px;
-    margin-top: 2%;
+    margin: 2% 0;
 }
 
 .download-button:hover, .download-button:focus{

@@ -43,10 +43,10 @@ const restart = document.getElementById('restart');
 const memeColor = document.getElementById('memeColor');
 const memeFilter = document.getElementById('memeFilter');
 const darkButton = document.getElementById('darkCheck');
-const header = document.querySelector('.header');
-const icons = document.querySelector('.fas');
+// const header = document.querySelector('.header');
+// const icons = document.querySelector('.fas');
 const body = document.getElementById('body');
-const range = document.getElementsByClassName('range');
+// const range = document.getElementsByClassName('range');
 
 
 
@@ -88,8 +88,8 @@ font.addEventListener('change', () =>{
 })
 
 fontSize.addEventListener('keyup', () =>{
-    memeTopText.style.fontSize = `${fontSize.value}px`;
-    memeBottomText.style.fontSize = `${fontSize.value}px`;
+        memeTopText.style.fontSize = `${fontSize.value}px`;
+        memeBottomText.style.fontSize = `${fontSize.value}px`;
 })
 
 leftAlign.addEventListener('click', (e) =>{
