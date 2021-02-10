@@ -7,7 +7,7 @@
 body{
     background-color: var(--backgroundMain);
     width: 100vw;
-    height: 150vh;
+    height: 120vh;
 }
 
 :root{
@@ -87,8 +87,7 @@ body{
 }
 
 .meme-big-box{
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin: 20% 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,8 +132,8 @@ body{
                        /* Media for central page */
 
 @media(min-width: 500px){
-    main{
-        height: 140vh;
+    body{
+        height: 160vh;
     }
 
     .meme-big-box{
@@ -313,6 +312,6 @@ input[type=range]::-webkit-slider-thumb {
 @media(min-width: 600px){
     .aside{
         width: 300px;
-        height: 140vh;
+        height: 160vh;
     }
 }
