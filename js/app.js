@@ -1,9 +1,23 @@
-// Primero tener elementos a los que se les aplica innerHTML
-// Luego los elementos a los que les aplico eventos
-
+// MEME CANVAS
 const memeTopText = document.getElementById('memeTopText');
 const memeBottomText = document.getElementById('memeBottomText')
 const bigBoxMeme = document.getElementById('bigBoxMeme');
+const memeBox = document.getElementById('memeBox');
+
+// DOWNLOAD
+const download = document.getElementById('download');
+
+// BUTTONS MENU
+const textButton = document.getElementById('textButton');
+const imageButton = document.getElementById('imageButton');
+const darkButton = document.getElementById('darkCheck');
+
+// CLOSE ASIDES
+const closeText = document.getElementById('closeText');
+const closeImage = document.getElementById('closeImage');
+
+// TEXT ASIDE
+const asideText = document.getElementById('asideText');
 const topText = document.getElementById('topText');
 const bottomText = document.getElementById('bottomText');
 const topCheck = document.getElementById('topCheck');
@@ -21,15 +35,10 @@ const outlineWhite = document.getElementById('outlineWhite');
 const outlineBlack = document.getElementById('outlineBlack');
 const spacing = document.getElementById('spacing');
 const lineSpacing = document.getElementById('lineSpacing');
-const url = document.getElementById('url');
-const memeBox = document.getElementById('memeBox');
-const download = document.getElementById('download');
-const closeText = document.getElementById('closeText');
-const asideText = document.getElementById('asideText');
-const textButton = document.getElementById('textButton');
-const closeImage = document.getElementById('closeImage');
+
+// IMAGE ASIDE
 const asideImage = document.getElementById('asideImage');
-const imageButton = document.getElementById('imageButton');
+const url = document.getElementById('url');
 const bright = document.getElementById('bright');
 const opacity = document.getElementById('opacity');
 const contrast = document.getElementById('contrast');
@@ -42,11 +51,6 @@ const invert = document.getElementById('invert');
 const restart = document.getElementById('restart');
 const memeColor = document.getElementById('memeColor');
 const memeFilter = document.getElementById('memeFilter');
-const darkButton = document.getElementById('darkCheck');
-// const header = document.querySelector('.header');
-// const icons = document.querySelector('.fas');
-// const body = document.getElementById('body');
-// const range = document.getElementsByClassName('range');
 
 
 

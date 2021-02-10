@@ -25,7 +25,9 @@ body{
 }
 
 
-                    /* Header */
+
+
+                    /* HEADER */
 
 .header{
     background-color: var(--backgroundHeader);
@@ -78,7 +80,10 @@ body{
     display: none;
 }
 
-                    /* Meme  */
+
+
+
+                    /* MEME CANVAS  */
 
 .main{
     display: flex;
@@ -113,7 +118,9 @@ body{
 }
 
 
-                        /* Download button */
+
+
+                        /* DOWNLOAD BUTTON */
 
 .download-button{
     background-color: var(--backgroundHeader);
@@ -129,7 +136,10 @@ body{
     outline: none;
 }
 
-                       /* Media for central page */
+
+
+
+                       /* MEDIA FOR MAIN PAGE */
 
 @media(min-width: 500px){
     body{
@@ -162,7 +172,9 @@ body{
 
 
 
-                        /* Aside */
+
+
+                        /* ASIDE */
 
 .aside{
     width: 100vw;
